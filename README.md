@@ -11,6 +11,6 @@ docker login -u dotenvsupport
 
 docker build -t dotenv-vault .
 
-docker image tag dotenv-vault dotenvorg/dotenv-vault:latest
-docker image push dotenvorg/dotenv-vault:latest
+docker image tag dotenv-vault dotenv/dotenv-vault:latest
+docker image push dotenv/dotenv-vault:latest
 ```
