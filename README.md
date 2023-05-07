@@ -5,18 +5,21 @@
 Run help command
 
 ```bash
+$ docker run --rm -w (pwd) -v (pwd):(pwd) -i -t dotenv-vault help
 $ docker run -it dotenv/dotenv-vault dotenv-vault help
 ```
 
 Run new command
 
 ```bash
+$ docker run --rm -w (pwd) -v (pwd):(pwd) -i -t dotenv-vault new
 $ docker run -it dotenv/dotenv-vault dotenv-vault new
 ```
 
 Run push command
 
 ```bash
+$ docker run --rm -w (pwd) -v (pwd):(pwd) -i -t dotenv-vault push
 $ docker run -it dotenv/dotenv-vault dotenv-vault push
 ```
 
@@ -30,6 +33,9 @@ docker login -u dotenvsupport
 # paste in the DOCKER_ACCESS_TOKEN
 
 docker build -t dotenv-vault .
+
+# run it locally to test
+docker run dotenv-vault
 
 docker image tag dotenv-vault dotenv/dotenv-vault:latest
 docker image push dotenv/dotenv-vault:latest

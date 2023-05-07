@@ -1,2 +1,4 @@
 FROM node:16
-RUN npm install dotenv-vault@1.22.0 -g
+WORKDIR /usr/src/app
+RUN npx dotenv-vault@1.22.0 help
+ENTRYPOINT ["npx", "dotenv-vault@1.22.0"]
