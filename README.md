@@ -2,6 +2,26 @@
 
 ## Usage
 
+Run help command
+
+```bash
+$ docker run -it dotenv/dotenv-vault dotenv-vault help
+```
+
+Run new command
+
+```bash
+$ docker run -it dotenv/dotenv-vault dotenv-vault new
+```
+
+Run push command
+
+```bash
+$ docker run -it dotenv/dotenv-vault dotenv-vault push
+```
+
+Note: the Docker image will not be able to open the urls on your machine. Copy and paste them to your browser.
+
 ## Development
 
 ```
