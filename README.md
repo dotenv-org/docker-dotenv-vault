@@ -5,22 +5,19 @@
 Run help command
 
 ```bash
-$ docker run --rm -w (pwd) -v (pwd):(pwd) -i -t dotenv-vault help
-$ docker run -it dotenv/dotenv-vault dotenv-vault help
+$ docker run -w $(pwd) -v $(pwd):$(pwd) -it dotenv-vault help
 ```
 
 Run new command
 
 ```bash
-$ docker run --rm -w (pwd) -v (pwd):(pwd) -i -t dotenv-vault new
-$ docker run -it dotenv/dotenv-vault dotenv-vault new
+$ docker run -w $(pwd) -v $(pwd):$(pwd) -it dotenv-vault hnew
 ```
 
 Run push command
 
 ```bash
-$ docker run --rm -w (pwd) -v (pwd):(pwd) -i -t dotenv-vault push
-$ docker run -it dotenv/dotenv-vault dotenv-vault push
+$ docker run -w $(pwd) -v $(pwd):$(pwd) -it dotenv-vault push
 ```
 
 Note: the Docker image will not be able to open the urls on your machine. Copy and paste them to your browser.
