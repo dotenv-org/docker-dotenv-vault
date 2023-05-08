@@ -11,7 +11,7 @@ $ docker run -w $(pwd) -v $(pwd):$(pwd) -it dotenv-vault help
 Run new command
 
 ```bash
-$ docker run -w $(pwd) -v $(pwd):$(pwd) -it dotenv-vault hnew
+$ docker run -w $(pwd) -v $(pwd):$(pwd) -it dotenv-vault new
 ```
 
 Run push command
