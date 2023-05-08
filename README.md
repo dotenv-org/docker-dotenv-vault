@@ -1,4 +1,4 @@
-# dotenv-vault docker image
+# dotenv-vault docker image 🐳💛
 
 <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg" alt="dotenv-vault" align="right" width="200" />
 
