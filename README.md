@@ -33,6 +33,8 @@ docker login -u dotenvsupport
 
 # paste in the DOCKER_ACCESS_TOKEN
 
+docker buildx build --platform linux/amd64,linux/arm64 -t dotenv/dotenv-vault --push .
+
 docker buildx build --platform linux/amd64,linux/arm64 -t dotenv-vault .
 
 # run it locally to test
