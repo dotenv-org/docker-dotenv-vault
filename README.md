@@ -33,7 +33,7 @@ docker login -u dotenvsupport
 
 # paste in the DOCKER_ACCESS_TOKEN
 
-docker build -t dotenv-vault .
+docker buildx build --platform linux/amd64,linux/arm64 -t dotenv-vault .
 
 # run it locally to test
 docker run dotenv-vault
